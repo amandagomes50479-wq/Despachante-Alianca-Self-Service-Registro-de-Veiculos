@@ -1,555 +1,368 @@
+
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Despachante Aliança | Detran RS, IPVA RS, Licenciamento RS e Multas RS - Canoas/RS</title>
+    <title>Despachante Aliança | Detran RS, IPVA RS, Licenciamento RS e Multas RS</title>
     <meta name="description" content="Despachante Aliança (Self Service Registro de Veiculos LTDA - CNPJ 02.530.221/0001-05). Desde 07/05/1998 em Canoas/RS com assessoria em Detran RS, IPVA RS, Licenciamento RS e Multas RS.">
-    <meta name="keywords" content="Detran RS, IPVA RS, Licenciamento RS, Multas RS, Despachante Aliança, Self Service Registro de Veiculos LTDA, Despachante Canoas RS, Igara Canoas">
-    <meta name="robots" content="index, follow">
-    
+    <meta name="keywords" content="Detran RS, IPVA RS, Licenciamento RS, Multas RS, Despachante Aliança, Self Service Registro de Veiculos LTDA, Canoas RS">
     <style>
-        :root {
-            --primary: #0f3d2e;
-            --primary-dark: #09261d;
-            --secondary: #1e6b52;
-            --accent: #f59e0b;
-            --whatsapp: #25d366;
-            --bg-light: #f8fafc;
-            --bg-gray: #f1f5f9;
-            --text-dark: #1e293b;
-            --text-muted: #475569;
-            --border: #cbd5e1;
-            --white: #ffffff;
-        }
-
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            color: var(--text-dark);
+            background-color: #ffffff;
+            color: #1e293b;
             line-height: 1.6;
-            background-color: var(--white);
         }
-
-        .disclaimer-bar {
+        .aviso-topo {
             background-color: #fef3c7;
             color: #92400e;
             text-align: center;
-            padding: 10px 16px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border-bottom: 1px solid #fde68a;
+            padding: 10px 15px;
+            font-size: 13px;
+            font-weight: bold;
+            border-bottom: 1px solid #f59e0b;
         }
-
         header {
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 18px 5%;
+            background-color: #0f3d2e;
+            color: #ffffff;
+            padding: 20px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            position: sticky;
-            top: 0;
-            z-index: 900;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
         }
-
-        .logo {
-            font-size: 1.45rem;
-            font-weight: 700;
-            letter-spacing: -0.5px;
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 4px;
         }
-
-        .logo span {
-            display: block;
-            font-size: 0.78rem;
-            font-weight: 400;
+        .logo p {
+            font-size: 13px;
             color: #cbd5e1;
         }
-
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 18px;
-        }
-
         nav a {
-            color: var(--white);
+            color: #ffffff;
             text-decoration: none;
-            font-size: 0.92rem;
-            font-weight: 500;
+            margin-left: 18px;
+            font-size: 14px;
+            font-weight: bold;
         }
-
         nav a:hover {
-            color: var(--accent);
+            color: #f59e0b;
         }
-
         .hero {
-            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 50%, var(--secondary) 100%);
-            color: var(--white);
-            padding: 68px 5%;
+            background-color: #165943;
+            color: #ffffff;
+            padding: 60px 5%;
             text-align: center;
         }
-
-        .badge-tradicao {
-            display: inline-block;
-            background-color: rgba(255, 255, 255, 0.14);
-            color: #fef3c7;
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 0.86rem;
-            font-weight: 600;
-            margin-bottom: 18px;
-            border: 1px solid rgba(255, 255, 255, 0.25);
+        .hero h2 {
+            font-size: 32px;
+            max-width: 850px;
+            margin: 0 auto 15px;
         }
-
-        .hero h1 {
-            font-size: 2.2rem;
-            max-width: 880px;
-            margin: 0 auto 18px;
-            line-height: 1.25;
-        }
-
         .hero p {
-            font-size: 1.1rem;
-            max-width: 750px;
-            margin: 0 auto 30px;
-            opacity: 0.95;
+            font-size: 17px;
+            max-width: 720px;
+            margin: 0 auto 25px;
         }
-
-        .hero-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 14px;
-            flex-wrap: wrap;
-        }
-
-        .btn-cta {
+        .btn-whats {
             display: inline-block;
-            background-color: var(--accent);
-            color: #111827;
-            font-weight: 700;
-            padding: 15px 32px;
+            background-color: #f59e0b;
+            color: #000000;
+            padding: 15px 30px;
             border-radius: 6px;
             text-decoration: none;
-            font-size: 1.02rem;
+            font-weight: bold;
+            font-size: 16px;
         }
-
-        .btn-cta:hover {
-            opacity: 0.92;
-        }
-
-        .btn-secondary {
-            display: inline-block;
-            background-color: transparent;
-            color: var(--white);
-            border: 1px solid var(--white);
-            font-weight: 600;
-            padding: 15px 28px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-size: 1.02rem;
-        }
-
-        .btn-secondary:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
         section {
-            padding: 58px 5%;
-            max-width: 1160px;
+            padding: 50px 5%;
+            max-width: 1140px;
             margin: 0 auto;
         }
-
-        .bg-alt {
-            background-color: var(--bg-light);
+        .fundo-cinza {
+            background-color: #f8fafc;
             border-top: 1px solid #e2e8f0;
             border-bottom: 1px solid #e2e8f0;
         }
-
-        h2 {
-            font-size: 1.8rem;
-            color: var(--primary);
-            margin-bottom: 14px;
+        .titulo-secao {
+            font-size: 26px;
+            color: #0f3d2e;
             text-align: center;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-muted);
-            max-width: 780px;
-            margin: 0 auto 34px;
-            font-size: 1.02rem;
-        }
-
-        .grid-2 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-            gap: 24px;
-        }
-
-        .grid-3 {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 22px;
-        }
-
-        .card {
-            background: var(--white);
-            padding: 28px;
-            border-radius: 8px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.03);
-        }
-
-        .card h3 {
-            color: var(--primary);
-            margin-bottom: 12px;
-            font-size: 1.25rem;
-        }
-
-        .card ul {
-            margin: 12px 0 16px 18px;
-            color: var(--text-muted);
-            font-size: 0.94rem;
-        }
-
-        .card ul li {
-            margin-bottom: 6px;
-        }
-
-        .card-link {
-            display: inline-block;
-            margin-top: 8px;
-            color: var(--secondary);
-            font-weight: 700;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .card-link:hover {
-            text-decoration: underline;
-        }
-
-        .registry-container {
-            background-color: var(--white);
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            padding: 30px;
-            margin-top: 24px;
-        }
-
-        .registry-header {
-            border-bottom: 2px solid var(--primary);
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-        }
-
-        .registry-header h3 {
-            color: var(--primary);
-            font-size: 1.3rem;
-        }
-
-        .registry-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 14px;
-        }
-
-        .registry-item {
-            background-color: var(--bg-light);
-            padding: 12px 16px;
-            border-radius: 6px;
-            border-left: 3px solid var(--secondary);
-        }
-
-        .registry-item small {
-            display: block;
-            color: var(--text-muted);
-            font-size: 0.76rem;
-            text-transform: uppercase;
-            font-weight: 700;
-            margin-bottom: 2px;
-        }
-
-        .registry-item strong {
-            color: var(--text-dark);
-            font-size: 0.95rem;
-        }
-
-        .qsa-box {
-            margin-top: 20px;
-            background-color: var(--bg-gray);
-            padding: 16px 20px;
-            border-radius: 6px;
-        }
-
-        .qsa-box h4 {
-            color: var(--primary);
-            margin-bottom: 8px;
-            font-size: 1rem;
-        }
-
-        .policy-block {
-            background: var(--white);
-            border: 1px solid #cbd5e1;
-            border-radius: 8px;
-            padding: 26px;
-            margin-bottom: 20px;
-        }
-
-        .policy-block h3 {
-            color: var(--primary);
-            font-size: 1.22rem;
-            margin-bottom: 12px;
-            border-bottom: 1px solid #e2e8f0;
-            padding-bottom: 8px;
-        }
-
-        .policy-block p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
             margin-bottom: 10px;
         }
-
-        .map-frame {
-            width: 100%;
-            height: 300px;
+        .subtitulo-secao {
+            text-align: center;
+            color: #475569;
+            max-width: 750px;
+            margin: 0 auto 30px;
+            font-size: 15px;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+        .card {
+            background-color: #ffffff;
             border: 1px solid #cbd5e1;
             border-radius: 8px;
-            margin-top: 28px;
+            padding: 24px;
         }
-
-        .whatsapp-float {
+        .card h3 {
+            color: #0f3d2e;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .card ul {
+            margin: 12px 0 16px 20px;
+            font-size: 14px;
+            color: #334155;
+        }
+        .card a {
+            color: #0f3d2e;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .dado-item {
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-left: 4px solid #0f3d2e;
+            padding: 12px 15px;
+            border-radius: 5px;
+        }
+        .dado-item span {
+            display: block;
+            font-size: 11px;
+            text-transform: uppercase;
+            color: #64748b;
+            font-weight: bold;
+        }
+        .dado-item strong {
+            font-size: 15px;
+            color: #0f172a;
+        }
+        .caixa-politica {
+            background-color: #ffffff;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 18px;
+        }
+        .caixa-politica h3 {
+            color: #0f3d2e;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 6px;
+        }
+        .caixa-politica p {
+            font-size: 14px;
+            color: #334155;
+            margin-bottom: 10px;
+        }
+        .whats-flutuante {
             position: fixed;
-            bottom: 22px;
-            right: 22px;
-            background-color: var(--whatsapp);
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
             color: #ffffff;
             padding: 14px 22px;
             border-radius: 50px;
-            font-weight: 700;
             text-decoration: none;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
-            z-index: 999;
-            font-size: 0.95rem;
+            font-weight: bold;
+            font-size: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
         }
-
-        .whatsapp-float:hover {
-            opacity: 0.92;
-        }
-
         footer {
             background-color: #0f172a;
             color: #cbd5e1;
-            padding: 48px 5% 85px;
-            font-size: 0.9rem;
+            padding: 40px 5% 80px;
+            font-size: 14px;
         }
-
-        .footer-content {
-            max-width: 1160px;
-            margin: 0 auto;
+        .rodape-grid {
+            max-width: 1140px;
+            margin: 0 auto 25px;
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 28px;
-            margin-bottom: 28px;
+            gap: 25px;
         }
-
-        .footer-content h4 {
-            color: var(--white);
-            margin-bottom: 12px;
-            font-size: 1.05rem;
+        footer h4 {
+            color: #ffffff;
+            margin-bottom: 10px;
         }
-
-        .footer-links a {
+        footer a {
             color: #94a3b8;
             text-decoration: none;
             display: block;
-margin-bottom: 8px;
-}
-.footer-links a:hover {
-color: var(--white);
-}
-.copyright {
-text-align: center;
-border-top: 1px solid #1e293b;
-padding-top: 22px;
-font-size: 0.85rem;
-color: #94a3b8;
-}
-@media (max-width: 650px) {
-.hero h1 { font-size: 1.65rem; }
-nav { margin-top: 12px; gap: 12px; }
-}
+            margin-bottom: 6px;
+        }
+        .direitos {
+            text-align: center;
+            border-top: 1px solid #1e293b;
+            padding-top: 20px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
 
+    <div class="aviso-topo">
+        AVISO LEGAL: A Despachante Aliança (Self Service Registro de Veiculos LTDA - CNPJ 02.530.221/0001-05) é uma empresa privada de apoio administrativo e preparação de documentos. Não possuímos vínculo governamental com o Detran RS ou SEFAZ-RS.
+    </div>
 
-Aviso Legal: A Despachante Aliança (Self Service Registro de Veiculos LTDA - CNPJ 02.530.221/0001-05) é uma empresa privada de apoio administrativo e assessoria documental. Não somos órgão oficial do Detran RS nem da SEFAZ-RS.
-Despachante Aliança
-Self Service Registro de Veiculos LTDA • Desde 07/05/1998
+    <header>
+        <div class="logo">
+            <h1>Despachante Aliança</h1>
+            <p>Self Service Registro de Veiculos LTDA • Fundada em 07/05/1998 • Canoas/RS</p>
+        </div>
+        <nav>
+            <a href="#servicos">Serviços RS</a>
+            <a href="#empresa">Dados Cadastrais e Sócios</a>
+            <a href="#politicas">Privacidade e Reembolso</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
+    <div class="hero">
+        <h2>Assessoria Especializada: Detran RS, IPVA RS, Licenciamento RS e Multas RS</h2>
+        <p>Mais de 28 anos de experiência (desde 07/05/1998) oferecendo preparação de documentos e suporte administrativo veicular em Canoas e em todo o Rio Grande do Sul.</p>
+        <a href="https://wa.me." target="_blank" class="btn-whats">Falar no WhatsApp: (51) 99240-0379</a>
+    </div>
 
-Serviços RS
-Dados Cadastrais e Sócios
-Privacidade e Reembolso
-Contato e Endereço
+    <section id="servicos">
+        <h2 class="titulo-secao">Nossos Serviços no Rio Grande do Sul</h2>
+        <p class="subtitulo-secao">Atendimento ágil e transparente para regularização documental de veículos no RS.</p>
 
-Fundada em 07/05/1998 • 28 anos, 6 meses e 17 dias de experiência • Canoas/RS
-Assessoria Especializada: Detran RS, IPVA RS, Licenciamento RS e Multas RS
-Soluções rápidas, transparentes e seguras para regularização documental de veículos no Rio Grande do Sul. Atendimento direto em Canoas e suporte administrativo em todo o estado.
-Atendimento via WhatsApp: (51) 99240-0379
-Ver Serviços
+        <div class="grid-2">
+            <div class="card">
+                <h3>Assessoria Detran RS</h3>
+                <p>Preparação de documentos e acompanhamento administrativo junto ao <strong>Detran RS</strong>:</p>
+                <ul>
+                    <li>Transferência de propriedade veicular</li>
+                    <li>Emissão de CRLV-e digital e segunda via</li>
+                    <li>Comunicação de venda e baixa de gravame</li>
+                    <li>Regularização de bloqueios administrativos</li>
+                </ul>
+                <a href="https://wa.me." target="_blank">Solicitar atendimento Detran RS &rarr;</a>
+            </div>
 
-Soluções Especializadas para Veículos no Rio Grande do Sul
-Preparamos e acompanhamos sua documentação administrativa com agilidade e respaldo de uma empresa estabelecida desde 1998.
-Assessoria Detran RS
-Preparação de documentos e suporte administrativo completo para processos junto ao Detran RS:
-• Transferência de propriedade e jurisdição veicular
-• Emissão e regularização de CRLV-e e CRV digital
-• Comunicação de venda, baixa de gravame e restrições
-• Alteração de características e segunda via de documentos
-Solicitar assessoria Detran RS →
-Regularização de IPVA RS
-Levantamento e orientação completa para quitação e regularização fiscal de IPVA RS:
-• Consulta detalhada de débitos de IPVA RS em aberto
-• Orientação sobre parcelamentos e exercícios atrasados
-• Emissão e conferência de guias para quitação segura
-• Regularização para desbloqueio de transferência veicular
-Consultar IPVA RS →
-Licenciamento RS
-Suporte ágil para emissão e regularização anual do Licenciamento RS:
-• Verificação de pendências que impedem o Licenciamento RS
-• Orientação sobre taxas de expedição e seguro obrigatório
-• Acompanhamento até a liberação do documento atualizado
-• Evite retenção do veículo e penalidades por documento vencido
-Regularizar Licenciamento RS →
+            <div class="card">
+                <h3>Regularização de IPVA RS</h3>
+                <p>Levantamento e suporte para quitação ou parcelamento de <strong>IPVA RS</strong>:</p>
+                <ul>
+                    <li>Consulta completa de débitos de IPVA RS em aberto</li>
+                    <li>Orientação para parcelamento de atrasados</li>
+                    <li>Conferência e emissão de guias para quitação</li>
+                    <li>Regularização fiscal do veículo</li>
+                </ul>
+                <a href="https://wa.me." target="_blank">Consultar IPVA RS &rarr;</a>
+            </div>
+
+            <div class="card">
+                <h3>Licenciamento RS</h3>
+                <p>Suporte administrativo para liberação anual do <strong>Licenciamento RS</strong>:</p>
+                <ul>
+                    <li>Verificação de pendências obrigatórias</li>
+                    <li>Emissão de taxas de Licenciamento RS</li>
+                    <li>Liberação rápida do documento digital atualizado</li>
+                    <li>Evite multas e apreensão do veículo</li>
+                </ul>
+                <a href="https://wa.me." target="_blank">Regularizar Licenciamento RS &rarr;</a>
+            </div>
+
+            <div class="card">
+Use code with caution.
 Consultoria de Multas RS
-Análise documental e apoio administrativo para notificações de Multas RS:
-• Levantamento completo de autuações e infrações no RS
-• Orientação de prazos para apresentação de real condutor
-• Preparação documental para defesa prévia e recursos
-• Acompanhamento administrativo de penalidades veiculares
+Análise documental e orientação administrativa para Multas RS:
+• Levantamento de autuações e notificações
+• Orientação para indicação de real condutor
+• Preparação documental para defesas e recursos
+• Acompanhamento de processos administrativos
 Consultar Multas RS →
 
-Sobre a Despachante Aliança
-A empresa Despachante Aliança de CNPJ 02.530.221/0001-05, fundada em 07/05/1998 e com razão social Self Service Registro de Veiculos LTDA, está localizada na cidade Canoas do estado Rio Grande do Sul. Sua atividade principal, conforme a Receita Federal, é 82.19-9-99 - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente. Sua situação cadastral até o momento é Ativa.
-Informações Completas de Registro
-CNPJ
-02.530.221/0001-05 - 02530221000105
+Informações Completas de Registro e Transparência
+A empresa Despachante Alianca de CNPJ 02.530.221/0001-05, fundada em 07/05/1998 e com razão social Self Service Registro de Veiculos LTDA, está localizada na cidade Canoas do estado Rio Grande do Sul. Sua atividade principal, conforme a Receita Federal, é 82.19-9-99 - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente. Sua situação cadastral até o momento é Ativa.
+CNPJ02.530.221/0001-05 - 02530221000105
+Razão SocialSelf Service Registro de Veiculos LTDA
+Nome FantasiaDespachante Alianca
+Data da Abertura07/05/1998 (28 anos, 6 meses e 17 dias)
+PorteMicro Empresa
+Natureza JurídicaSociedade Empresária Limitada
+Opção pelo MEINão
+Opção pelo SimplesSim (Data opção Simples: 01/01/2009)
+Capital SocialR$ 13.500,00
+TipoMatriz
+Situação CadastralAtiva (Data Situação Cadastral: 03/11/2005)
+CNAE Principal82.19-9-99 - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente
+Sócio-AdministradorDaniel Debarba (Qualificação: Sócio-Administrador)
+Sócio-AdministradorJulio Cesar e Silva (Qualificação: Sócio-Administrador)
+Endereço CompletoAvenida Getulio Vargas, 7979, Sala 01 - Igara, Canoas - RS, CEP 92410-133
+Endereço para Correspondência
+Despachante Alianca Self Service Registro de Veiculos LTDA
 
+Avenida Getulio Vargas 7979 Sala 01
 
-Razão Social
-Self Service Registro de Veiculos LTDA
+Igara
 
+Canoas RS
 
-Nome Fantasia
-Despachante Alianca
-
-
-Data da Abertura
-07/05/1998 (28 anos, 6 meses e 17 dias)
-
-
-Porte
-Micro Empresa
-
-
-Natureza Jurídica
-Sociedade Empresária Limitada
-
-
-Opção pelo MEI
-Não
-
-
-Opção pelo Simples
-Sim (Data opção Simples: 01/01/2009)
-
-
-Capital Social
-R$ 13.500,00
-
-
-Tipo
-Matriz
-
-
-Situação Cadastral
-Ativa (Data Situação Cadastral: 03/11/2005)
-
-
-Atividade Principal (CNAE)
-82.19-9-99 - Preparação de documentos e serviços especializados de apoio administrativo não especificados anteriormente
-
-Quadro de Sócios e Administradores
-— Sócio-Administrador
-— Sócio-Administrador
-Qualificação do responsável pela empresa: Sócio-Administrador
-Localização e Endereço para Correspondência
-Avenida Getulio Vargas, 7979  |  Complemento: Sala 01  |  Bairro: Igara
-92410-133  |  Município: Canoas  |  Estado: Rio Grande do Sul
-
-
-
-                        Despachante Alianca Self Service Registro de Veiculos LTDA
-
-                        Avenida Getulio Vargas 7979 Sala 01
-
-                        Igara • Canoas RS • 92410-133
+92410-133
 Políticas de Privacidade, Reembolso e Termos de Uso
-Diretrizes transparentes de atendimento, proteção de dados pessoais e direitos garantidos ao consumidor.
-1. Política de Reembolso e Cancelamento
-Em total conformidade com o Artigo 49 do Código de Defesa do Consumidor (Lei nº 8.078/1990), o cliente tem o direito de desistir da contratação e solicitar o reembolso integral (100%) dos honorários de assessoria pagos à Self Service Registro de Veiculos LTDA (Despachante Aliança) no prazo de até 7 (sete) dias corridos contados a partir da data de pagamento, desde que o protocolo administrativo ou execução do serviço (junto ao Detran RS, guias de IPVA RS, Licenciamento RS ou preparação de recursos de Multas RS) ainda não tenha sido iniciado.
-Caso o serviço técnico já tenha sido executado ou protocolado mediante autorização prévia do cliente, será restituído o saldo remanescente após a dedução proporcional do trabalho administrativo já realizado e de eventuais taxas públicas já recolhidas aos órgãos governamentais (uma vez que tributos e taxas públicas quitadas não são passíveis de estorno direto pelo órgão arrecadador).
-Envie sua solicitação para o e-mail oficial julio.desp.nh@gmail.com ou pelo WhatsApp (51) 99240-0379 informando nome completo, CPF/CNPJ e comprovante de pagamento. O estorno é processado em até 5 (cinco) dias úteis através do mesmo meio de pagamento utilizado na contratação.
-2. Política de Privacidade e Proteção de Dados (LGPD)
-A Despachante Aliança (Self Service Registro de Veiculos LTDA - CNPJ 02.530.221/0001-05) respeita a privacidade de seus clientes e visitantes e cumpre rigorosamente a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018).
-Coletamos apenas os dados estritamente necessários para a prestação dos serviços solicitados (como nome, CPF/CNPJ, telefone, e-mail, placa e Renavam do veículo). Essas informações são utilizadas exclusivamente para consultas preliminares, elaboração de orçamentos, preparação de documentos e comunicação sobre o andamento dos processos contratados.
-Não vendemos, alugamos ou cedemos dados pessoais a terceiros para fins comerciais ou de marketing. Seus dados são tratados em ambiente seguro e o titular pode solicitar a qualquer momento a confirmação de tratamento, correção ou eliminação definitiva de seus dados através do e-mail julio.desp.nh@gmail.com.
-3. Termos de Uso e Isenção de Vínculo Governamental
-A Despachante Aliança atua exclusivamente como prestadora privada de serviços de preparação de documentos e apoio administrativo (CNAE 82.19-9-99). Não somos órgão público, autarquia, nem possuímos vínculo institucional ou governamental com o Departamento Estadual de Trânsito do Rio Grande do Sul (Detran RS), Secretaria da Fazenda (SEFAZ-RS) ou prefeituras.
-Os serviços públicos podem ser solicitados diretamente pelo cidadão nos canais oficiais do governo sem custos de intermediação; os honorários cobrados por nossa empresa referem-se exclusivamente ao serviço privado de despachadoria, conferência documental e acompanhamento profissional. Os prazos de compensação bancária e análise final dependem exclusivamente dos órgãos públicos competentes.
-Canais Oficiais de Contato e Localização
-Entre em contato com nossa equipe em Canoas/RS ou visite nosso escritório.
+Diretrizes legais e garantias ao consumidor conforme LGPD e Código de Defesa do Consumidor.
+1. Política de Reembolso e Cancelamento (CDC Art. 49)
+O cliente pode solicitar o cancelamento e o reembolso integral (100%) dos honorários pagos à Self Service Registro de Veiculos LTDA (Despachante Aliança) em até 7 (sete) dias corridos após a contratação, desde que o serviço administrativo ainda não tenha sido iniciado ou protocolado junto ao Detran RS, SEFAZ-RS ou órgãos competentes.
+Caso o trabalho técnico já tenha sido executado ou protocolado com autorização do cliente, será deduzido apenas o valor proporcional ao serviço já realizado e eventuais taxas públicas já recolhidas aos órgãos públicos (que não são estornadas pelo órgão arrecadador).
+Solicitação de Reembolso: Envie e-mail para julio.desp.nh@gmail.com ou WhatsApp para (51) 99240-0379 informando CPF/CNPJ e comprovante. O estorno ocorre em até 5 dias úteis pelo mesmo meio de pagamento utilizado.
+2. Política de Privacidade (LGPD - Lei nº 13.709/2018)
+A Despachante Aliança (Self Service Registro de Veiculos LTDA - CNPJ 02.530.221/0001-05) coleta exclusivamente os dados necessários para atendimento e execução dos serviços contratados (nome, CPF/CNPJ, telefone, e-mail, placa e Renavam).
+Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros para fins de marketing. O titular pode solicitar consulta, alteração ou exclusão de seus dados a qualquer momento pelo e-mail julio.desp.nh@gmail.com.
+3. Termos de Uso e Isenção de Vínculo Público
+A Despachante Aliança é uma empresa privada (CNAE 82.19-9-99), independente e sem vínculo governamental com o Detran RS, SEFAZ-RS ou prefeituras. Os serviços públicos podem ser solicitados diretamente pelo cidadão nos canais oficiais do governo sem custos de intermediação; nossos honorários referem-se exclusivamente à prestação privada de assessoria e preparação documental.
+Contatos e Localização
+Fale diretamente com nossa equipe em Canoas/RS.
 Telefone e WhatsApp
-•
+(51) 99240-0379
+Ligar agora | Abrir WhatsApp
 E-mail Oficial
-Canal oficial para envio de documentos, orçamentos, suporte LGPD e solicitações de reembolso.
-Localização e Correspondência
+julio.desp.nh@gmail.com
+Enviar E-mail
+Localização
+Logradouro: Avenida Getulio Vargas, 7979
 
+Complemento: Sala 01 • Bairro: Igara
 
-                        Self Service Registro de Veiculos LTDA
-
-                        Avenida Getulio Vargas, 7979, Sala 01
-
-                        Igara • Canoas - RS • CEP: 92410-133
+CEP: 92410-133 • Canoas - Rio Grande do Sul
+Procurar no Google Maps →
 WhatsApp (51) 99240-0379
 Despachante Aliança
 Razão Social: Self Service Registro de Veiculos LTDA
-CNPJ: 02.530.221/0001-05 (02530221000105)
+CNPJ: 02.530.221/0001-05
 Abertura: 07/05/1998 • Situação: Ativa
-Endereço: Avenida Getulio Vargas, 7979, Sala 01 - Igara, Canoas/RS - CEP 92410-133
-Navegação e Políticas
-Detran RS e Licenciamento RS
-IPVA RS e Multas RS
+Av. Getulio Vargas, 7979, Sala 01 - Igara, Canoas/RS - 92410-133
+Navegação
+Detran RS, IPVA RS, Licenciamento RS e Multas RS
 Dados Cadastrais e Sócios
-Política de Privacidade (LGPD)
-Política de Reembolso
-Contato e Mapa
+Política de Privacidade e Reembolso
+Contato
 
 
-Atendimento e Transparência
+Administração e Contato
+Sócios-Administradores: Daniel Debarba / Julio Cesar e Silva
 Telefone/WhatsApp: (51) 99240-0379
 E-mail: julio.desp.nh@gmail.com
-Sócios-Administradores: Daniel Debarba / Julio Cesar e Silva
-Empresa privada de apoio administrativo e preparação de documentos (CNAE 82.19-9-99). Não possuímos vínculo governamental com o Detran RS ou SEFAZ-RS.
 © 1998 - 2026 Despachante Aliança - Self Service Registro de Veiculos LTDA (CNPJ 02.530.221/0001-05). Todos os direitos reservados.
